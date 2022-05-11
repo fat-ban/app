@@ -1,0 +1,8 @@
+.recipe-liste{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-column-gap: 4rem;
+    grid-column: center;
+    padding:35px;
+    
+} 

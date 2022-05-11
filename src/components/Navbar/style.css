@@ -1,0 +1,30 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    padding: 15px 25px ;
+    /*border-bottom: 2px solid #fff;*/
+
+}
+
+.logo{
+font-size: 25px;
+font-weight: bold;
+color:#fff;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+ margin: 8px;
+ padding: 8px 15px;
+ border-radius: 6px;
+ background-color: #3c5a4b;
+ color: #fff;
+ font-weight: 500;
+}
