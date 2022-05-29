@@ -1,0 +1,40 @@
+.recipeListeRandom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:auto;
+    height:auto;
+    /*margin-top: 10rem;*/
+}
+.recipe-card-random{
+    /*width:100%;
+    height: 100%;
+    flex:1;
+    align-self: center;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.recipe-card-random img{
+    width:60%;
+    height: 60%;
+}
+.content-random-meal{
+    margin-top: 30px;
+    width: 80%;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.title-recipe{
+    font-size:20px;
+    font-weight:400;
+    padding:8px;
+    color: #fff;
+}

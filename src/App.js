@@ -1,65 +1,36 @@
-import {useEffect,useState} from "react"
+import React, { useState } from "react";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Recipes from "./components/Recipes";
-import axios from "axios"
-import "./App.css"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-
-
+import "./App.css";
+import Home from "./components/Home";
+import FilterIng from "./components/FilterIng";
+import FilterNameMeal from "./components/FilterNameMeal";
 
 function App() {
-
-  const [recipesListe, setRecipesListe] = useState("")
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-  
-    
-    const fetchRecipes = async ()=>{
-     //const  url = "https://www.themealdb.com/api/json/v1/1/categories.php"
-    
-         await axios.get("https://www.themealdb.com/api/json/v1/1/categories.php")
-         
-         .then ((res)=>{
-           console.log(res)
-           setRecipesListe(res.data.categories)
-           setLoading(false)
-          
-         })
-         /*if (!res){
-              console.log("res don't exist...")
-             
-         }else {
-             console.log(res)
-             setRecipesListe(res.data.categories)
-             console.log(loading)
-             //console.log(recipes)
-         }*/
-     . catch( (error) =>{
-       console.log(error.message)
-     })
-    
-    }
-    fetchRecipes()
-  }, [])
-  
-  
-  
+  const [showModal, setShowModal] = useState(false);
+  //create handleclick in this section
 
   return (
-    <div className="App">
-     <Navbar/>
-     <hr className="line-navbar"/>
-     {loading || !recipesListe ? (
-       <div>Loading....</div>
-     ):(
-      <Recipes recipesListe={recipesListe}/>
-     )}
-      
-    
-     <Footer/>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <hr className="line-navbar" />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route
+            path={`/filterIng`}
+            element={<FilterIng />}
+          />
+          <Route 
+          path="/filterNameMeal" 
+          element={<FilterNameMeal />} />
+        </Routes>
+
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

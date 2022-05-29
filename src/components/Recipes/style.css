@@ -6,3 +6,12 @@
     padding:35px;
     
 } 
+.card-recipe{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    width:150px;
+    height: 150px;
+}
+

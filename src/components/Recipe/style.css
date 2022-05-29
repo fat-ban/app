@@ -1,3 +1,16 @@
+.recipe-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    /*border :1px solid #fff;*/
+}
+.recipe-card img{
+    width: 80%;
+    height: 70%;
+}
 .recipe{
     /*flex:1;*/
     width:200px;
@@ -5,15 +18,104 @@
     height: 250px;
     display:flex;
     flex-direction: column;
-    color: #fff;
+    justify-content:center;
+    /*color: #fff;*/
     align-items: center;
+    border :1px solid #fff;
+    
 }
-.recipe-card img{
-    width: 100%;
-    height: 100%;
+.recipeByIng{
+    /*background-color:red;*/
+    /*width:200px;
+    margin-top:150px;
+    height: 10px;*/
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    /*color: #fff;*/
+    align-items: center;
+    border :1px solid #fff;
+    padding: 15px;
+    margin: 8px;
+    
+}
+.recipeByIng .btn{
+margin-top: 0;
+margin-bottom: 6px;
+background-color:#3c5a4b;
+border:0px;
 
 }
-.recipe h3{
-font-size: 20px;
-font-weight:300;
+
+.button-filter{
+    margin-bottom: 6px;
+}
+
+.title-recipe h3{
+font-size: 16px;
+font-weight:400;
+/*margin-bottom: 10px;*/
+color: #fff;
+/*padding: 10px;*/
+
+
+}
+.title-recipe{
+    padding-bottom:3px;
+    
+}
+.description-recipe{
+    font-size:12px;
+    height: 50%;
+}
+/*Modal Style*/
+.card-recipe{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+   /* width:100%;
+    height: 100%;*/
+}
+
+.card-recipe 
+{
+    
+    width:100%;
+    height:100%;
+    margin:8px;
+  
+}
+.title-recipe{
+   text-align: center;
+    font-size:15px;
+    font-weight:500;
+    margin-top:25px;
+}
+.description-recipe{
+    text-align:justify;
+    font-size:12px;
+    font-weight:300;
+    margin-top:25px;
+}
+/*.card-recipe .modalImg{
+    width:100%;
+    height: 80%;
+}*/
+.modalImg{
+    flex: 1;
+    align-self: center;
+width:300px ;
+height: 200px;
+box-sizing: border-box;
+}
+.img{
+    width:300px ;
+    height: 200px;
+}
+.card-modal{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
 }

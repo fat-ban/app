@@ -1,28 +1,35 @@
-import React from 'react'
-import Recipe from '../Recipe'
-import "./style.css"
+import React
+//,{useState}
+ from "react";
+import Recipe from "../Recipe";
+import "./style.css";
 
-const Recipes = ({recipesListe}) => {
+const Recipes = ({ recipesListe }) => {
+
+  //const [displayFromRecipesComp, setDisplayFromRecipesComp] = useState(false)
   //const [recipeModal, setRecipeModal] = useState("")
-  //console.log(recipesListe)
+  console.log(recipesListe)
 
- /* const handleClickReciprItem=(id)=>{
+  /* const handleClickReciprItem=(id)=>{
     setRecipeModal(recipesListe.filter((item)=>
       item.idCategory === id
     ))
     
       }*/
-      //console.log(recipeModal)
+  //console.log(recipeModal)
 
   return (
-    <div className='recipe-liste'>
-      {recipesListe.map((recipeItem)=>(
-         <Recipe recipeItem = {recipeItem} key={recipeItem.idCategory} recipesListe={recipesListe}/>
+    <div className="recipe-liste">
+      {recipesListe.map((recipeItem) => (
+        <Recipe
+          recipeItem={recipeItem}
+          key={recipeItem.idCategory}
+          recipesListe={recipesListe}
+          //displayFromRecipesComp={displayFromRecipesComp}
+        />
       ))}
-    
-      
     </div>
-  )
-}
+  );
+};
 
-export default Recipes
+export default Recipes;

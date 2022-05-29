@@ -1,0 +1,10 @@
+.recipe-loading{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+}
+.ovalSpinner{
+   margin-top: 90px;
+   
+}

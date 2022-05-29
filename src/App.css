@@ -4,7 +4,12 @@
   background-color: black;
 }
 *{
-  background-color: black;
+  /*background-color: black;*/
+  box-sizing: border-box;
+}
+.App{
+  width:100%;
+  height: 250vh;
 }
 .line-navbar{
   border:1px solid #fff;
@@ -15,3 +20,21 @@
   justify-content: center;
   align-items: center;
 }
+.recipe-loading{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items: center;
+}
+.ovalSpinner{
+ margin-top: 90px;
+ 
+}
+.recipe-liste{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-column-gap: 4rem;
+  grid-column: center;
+  padding:35px;
+  
+} 
