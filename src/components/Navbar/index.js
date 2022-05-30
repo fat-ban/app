@@ -11,7 +11,7 @@ import {myContext} from '../context/Context'
 const Navbar = () => {
   //console.log(myContext);
 
-  const { listeFilterByMainIng,filterIngredient,loadingMainIng} = useContext(myContext)
+  const { setListeFilterByMainIng,listeFilterByMainIng,filterIngredient,loadingMainIng} = useContext(myContext)
 
   //const [filterByIng, setFilterByIng] = useState(false)
   const [showModalIng, setShowModalIng] = useState(false);
@@ -40,6 +40,7 @@ const Navbar = () => {
   };
   //////////click filter by main ing
   const handleClick = () => {
+    //setListeFilterByMainIng([])
     setShowModalIng(true);
     setIsModalVisible(true);
     //setFilterByMainIng('')
