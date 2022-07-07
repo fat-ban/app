@@ -55,7 +55,56 @@
         ],
         "answer": "props"
       },
-      {}
+      {
+        "quest6": "Which of the following methods in a React Component is called after the component is rendered for the first time?",
+        "choices": [
+          "componentDidUpdate",
+          "componentDidMount",
+          "componentMounted",
+          "componentUpdated"
+        ],
+        "answer": ""
+      },
+      {
+        "quest7": "Which of the following is the correct syntax for a button click event handler foo?",
+        "choices": [
+          "<button onclick={this.foo()}>",
+          "<button onclick={this.foo}>",
+          "<button onClick={this.foo()}>",
+          "<button onClick={this.foo}>"
+        ],
+        "answer": "<button onClick={this.foo}>" 
+      },
+      {
+        "quest8": "Everything in React is a _____________",
+        "choices": [
+          "Module",
+          "Component",
+          "Package",
+          "Class"
+        ],
+        "answer": "Component"
+      },
+      {
+        "quest9": "In which directory React Components are saved?",
+        "choices": [
+          "Inside js/components/",
+          "Inside vendor/components/",
+          "Inside vendor/components/",
+          "Inside vendor/"
+        ],
+        "answer": ""
+      },
+      {
+        "quest10": "What is Babel?",
+        "choices": [
+          "A transpiler.",
+          "An interpreter",
+          "A Compiler",
+          "A Compiler and An interpreter"
+        ],
+        "answer": "A Compiler and An interpreter"
+      }
     
   ]
 }
